@@ -1,25 +1,916 @@
+
 <!DOCTYPE html>
-<html lang="ar">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Al Riyadh Info</title>
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-            background-color: #525659;
+<!-- saved from url=(0565)https://eservices.alriyadh-gov-sa.info/DownloadFile/?oSt4HwS2Ubv002iLy22nlFlO0O_9CNeaIl4IcZHn6IePSxFeAXSTonaRCDNMEpWt6Ea1-0VTm6_JsvA1LXFxCHnh14QU5Hm2ISaEmVUJCCEeEMcGrUlsmKbwGhLCl6n86c1LaR4ZbtYO2WQ9PoAN_9dDGetNdkLdMkt6JGWZo5SLzp83wf8kODtI80KLgUUVwxg8bVBfY9W3mB9TinHVCfi15npUVK48K56qYOenjA_MZsd1Lpzcvfmm3JuYde2L0rg4-5SwwOmiKbrLOKHNzRZdCHD3gAlH2OIl0H0Jqpodx4E_rh_4n65hSIuoE8sFebP5XJSY859I68ZEYICh5t2wJBWgA7EcDCMoo-PPISmFsTwffoefFEmKzjwIiTkusYQWfjgcc5gS1XiegyWHgDcagkgV4_L-zC9Gh7CUtIMhqsp3inmFrERjNUNsRTL5vucTR9RYfGIlMewGCKeuv4NbZCHSAlpaedkdZ5YseriPE_-hVJiWQdvrP8HHJb43 -->
+<html lang="ar" translate="no" class="notranslate"><head translate="no" class="notranslate"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style translate="no" class="notranslate">
+    /* Hide the iPhone-specific div by default */
+#nopdf-iphonecontent {
+    display: none;
+}
+
+html,
+body,
+#pdf-content,
+#pdf-content *,
+#nopdf-iphonecontent,
+#nopdf-iphonecontent * {
+    translate: no !important;
+}
+
+
+</style>
+<script translate="no" class="notranslate">
+//     document.addEventListener("DOMContentLoaded", function() {
+//     const isIphone = /iPhone|iPod|iPad/.test(navigator.userAgent) && !window.MSStream;
+    
+//     const pdfDiv = document.getElementById("pdf-content");
+//     const noPdfDiv = document.getElementById("nopdf-iphonecontent");
+
+//     if (isIphone) {
+//         // 1. Show the clean iPhone version
+//         noPdfDiv.style.display = "block";
+//         // 2. Hide the version the PDF library uses
+//         pdfDiv.style.display = "none";
+//         console.log("iPhone mode: Showing static content, hiding PDF source.");
+//     } else {
+//         // Android / PC Logic
+//         window.addEventListener("load", async () => {
+//             const { jsPDF } = window.jspdf;
+            
+//             // Wait for images to be ready
+//             await new Promise(r => setTimeout(r, 1000));
+
+//             try {
+//                 // We capture 'pdfDiv' even if it's visible or hidden 
+//                 // but usually, for Android, we leave it visible.
+//                 const canvas = await html2canvas(pdfDiv, {
+//                     scale: 2,
+//                     useCORS: true,
+//                     backgroundColor: "#ffffff"
+//                 });
+
+//                 const imgData = canvas.toDataURL("image/jpeg", 0.9);
+//                 const pdf = new jsPDF('p', 'mm', [180, 65.5]);
+//                 pdf.addImage(imgData, 'JPEG', 0, 0, 65.5, 180);
+//                 pdf.save("Medical_Certificate.pdf");
+//             } catch (e) {
+//                 console.error("PDF Fail:", e);
+//             }
+//         });
+//     }
+// });
+    
+    
+</script>
+
+ </head><body class="loged-user bg-grey loaded muneer-theme-system notranslate" data-new-gr-c-s-check-loaded="14.1214.0" data-gr-ext-installed="" cz-shortcut-listen="true" translate="no"><div id="nopdf-iphonecontent" style="width: 359px; margin: 0 auto;" translate="no" class="notranslate">
+
+
+
+
+    <title translate="no" class="notranslate">ArkanMedicalCertificateCard</title>
+    <meta name="google" content="notranslate" translate="no" class="notranslate">
+<meta http-equiv="Content-Language" content="ar" translate="no" class="notranslate">
+    
+    <!--<link rel="icon" type="image/png" href="https://eservices.alriyadh-gov-sa.info/favicon.png">-->
+
+    <meta name="robots" content="noindex" translate="no" class="notranslate">
+    <!--<base href="/Eservices/HealthIssue" translate="no" class="notranslate">--><base href=".">
+
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover" translate="no" class="notranslate">
+    <meta name="apple-mobile-web-app-capable" content="yes" translate="no" class="notranslate">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" translate="no" class="notranslate">
+    <meta name="description" content="content" translate="no" class="notranslate">
+    <meta name="author" content="content" translate="no" class="notranslate">
+  <style translate="no" class="notranslate">
+
+
+
+ .hidesxm{
+     display: none;
+     
+ }
+
+
+@font-face {
+  font-family: 'BahijTheSansArabic';
+  src: url('/bahijthesansarabicplain.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'BahijTheSansArabic', sans-serif;
+}
+
+
+
+
+
+.certificate-container {
+  max-width: 360px; /* 400px * 0.6 */
+  margin: 12px auto; /* 20px * 0.6 */
+  background-color: white;
+  padding-bottom: 84px; /* 140px * 0.6 */
+}
+
+.certificate-header {
+  text-align: center;
+  padding: 12px 0 0 0; /* 20px * 0.6 */
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex-direction: row-reverse;
+}
+
+.certificate-logo {
+  width: 65px; /* 70px * 0.7 */
+  height: 65px;
+  padding-left: 6px; /* 10px * 0.6 */
+  border-left: 1px solid #afafaf;
+}
+
+.main-title {
+  font-size: 22px; /* 24px - 20% */
+  color: #0B6F41;
+  font-weight: bold;
+  margin: 0;
+}
+
+.profile-picture {
+  margin-top: 0px;
+}
+
+.client-image {
+  height: 100px;
+  /*object-fit: cover;*/
+  margin-top: -12px;
+  margin-right: 36px; 
+  width: 140px;
+  display: inline !important;
+}
+
+.certificate-subheading {
+  text-align: center;
+  padding-bottom: 6px; /* 10px * 0.6 */
+  color: #0B6F41;
+  font-weight: bold;
+  font-size: 16px; /* 18px * 0.8 */
+}
+
+
+
+.certificate-fields  {
+  background-image: url('/bg2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+}
+
+
+
+.certificate-fields {
+  padding: 20px 16px; /* 10px * 0.6, 20px * 0.6 */
+  padding-bottom: 12px; /* 20px * 0.6 */
+  text-align: right;
+  border-radius: 7px; /* 12px * 0.6 */
+  /*box-shadow: 0 0 7px rgb(0 0 0 / 38%);*/
+  margin: 0 12px; /* 20px * 0.6 */
+}
+
+.section-heading {
+  font-size: 14px; /* 16px * 0.6 */
+  font-weight: bold;
+  color: #0B6F41;
+  padding-top: 9px; /* 15px * 0.6 */
+  margin-top: 9px;
+  margin-bottom: 6px;
+  border-top: 1px solid #afafaf91;
+}
+
+.section-heading.no-border-sxm {
+  border-top: none;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-bottom: 6px; /* 10px * 0.6 */
+}
+
+.form-row label {
+  display: block;
+  font-size: 12px; /* 14px * 0.6 */
+  margin-bottom: 2px;
+  color: #5555557d;
+  min-width: 93px; /* 120px * 0.6 */
+  font-weight: 600;
+}
+
+.form-row input {
+  width: 100%;
+  border: none;
+  padding: 4px 6px; /* 6px * 0.6, 10px * 0.6 */
+  border-radius: 4px; /* 6px * 0.6 */
+  background-color: transparent;
+  font-size: 12px; /* 14px * 0.6 */
+  text-align: right;
+  font-family: inherit;
+  
+  line-height: 2.2;
+}
+
+input.sxm-mname {
+  min-width: 126px; /* 210px * 0.6 */
+}
+
+textarea.sxm-mname {
+  border: none;
+  resize: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 4px 6px;
+  font-size: 12px;
+  text-align: right;
+  font-family: inherit;
+  border-radius: 4px;
+  line-height: 1.2;
+  background-color: transparent;
+}
+
+/*label.sxm-lablem {*/
+/*  min-width: 36px; */
+/*}*/
+
+/*label.sxm-lablem2 {*/
+/*  min-width: 66px; */
+/*}*/
+
+h2.form-heading {
+  margin: 0;
+  font-size: 22px;
+}
+
+
+.sxm-btext
+ {
+    line-height: 2.2 !important;
+    margin-top: -12px;
+}
+  
+textarea.sxm-mname.sxm-btext {
+  height: 35px;
+    transform: translate(-4px, 32px);
+    font-size: 14px;
+}
+</style>
+  
+  
+  
+
+    
+    <script translate="no" class="notranslate">
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
         }
-        iframe {
-            width: 100%;
-            height: 100vh;
-            border: none;
+        gtag('js', new Date());
+        gtag('config', 'G-69XYTDF1T2');
+        
+        
+        
+          function toggleDropdown() {
+    document.getElementById('dropdown').classList.toggle('show');
+  }
+
+  window.addEventListener('click', function (e) {
+    const dropdown = document.getElementById('dropdown');
+    const button = document.querySelector('.lang-btn');
+    if (!button.contains(e.target)) {
+      dropdown.classList.remove('show');
+    }
+  });
+    </script>
+
+
+
+  <div class="certificate-container notranslate" translate="no">
+  <div class="certificate-header notranslate" translate="no">
+    <div class="logo-title notranslate" translate="no">
+      <img src="./ArkanMedicalCertificateCard_files/favicon.png" alt="Logo" class="certificate-logo notranslate" translate="no">
+      <h1 class="main-title notranslate" translate="no">أمانة منطقة الرياض</h1>
+    </div>
+    <div class="profile-picture notranslate" translate="no">
+      <img src="./ArkanMedicalCertificateCard_files/140826_213755.jpg" alt="الصورة الشخصية" class="client-image notranslate" translate="no">
+    </div>
+  </div>
+
+  <div class="certificate-subheading notranslate" translate="no">
+    <h2 class="form-heading notranslate" translate="no">شهادة صحية</h2>
+  </div>
+
+  <div class="certificate-fields notranslate" translate="no">
+    <div class="section-heading no-border-sxm notranslate" translate="no">:بيانات الشهادة</div>
+
+    <div class="form-row notranslate" translate="no">
+      <label translate="no" class="notranslate">رقم الشهادة</label>
+      <input type="text" value="54673-1448" readonly="" translate="no" class="notranslate">
+    </div>
+    <div class="form-row notranslate" translate="no">
+      <label translate="no" class="notranslate">تاريخ الإصدار</label>
+      <input type="text" value="21/02/1448" readonly="" translate="no" class="notranslate">
+    </div>
+    <div class="form-row notranslate" translate="no">
+      <label translate="no" class="notranslate">نهاية الصلاحية</label>
+      <input type="text" value="21/02/1449" readonly="" translate="no" class="notranslate">
+    </div>
+
+    <div class="section-heading notranslate" translate="no">:بيانات صاحب الشهادة</div>
+
+    <div class="form-row notranslate" translate="no">
+      <label class="sxm-lablem notranslate" translate="no">الاسم</label>
+      <input type="text" class="sxm-mname notranslate" value="قسام احمد احمد صالح صياد" readonly="" translate="no">
+    </div>
+    <div class="form-row notranslate" translate="no">
+      <label translate="no" class="notranslate">رقم الهوية</label>
+      <input type="text" value="2608550907" readonly="" translate="no" class="notranslate">
+    </div>
+    <div class="form-row notranslate" translate="no">
+      <label translate="no" class="notranslate">الجنس</label>
+      <input type="text" value="ذكر" readonly="" translate="no" class="notranslate">
+    </div>
+    <div class="form-row notranslate" translate="no">
+      <label translate="no" class="notranslate">الجنسية</label>
+      <input type="text" value="اليمن" readonly="" translate="no" class="notranslate">
+    </div>
+    <div class="form-row notranslate" translate="no">
+      <label translate="no" class="notranslate">المهنة</label>
+      <input type="text" value="عامل تحميل وتنزيل" readonly="" translate="no" class="notranslate">
+    </div>
+    <div class="form-row notranslate" translate="no">
+      <label translate="no" class="notranslate">البرنامج التثقيفي</label>
+      <input type="text" value="سلامة الغذاء" readonly="" translate="no" class="notranslate">
+    </div>
+    <div class="form-row notranslate" translate="no">
+      <label translate="no" class="notranslate">تاريخ إنهاء البرنامج</label>
+      <input type="text" value="16/02/49 12:00:00 ص" readonly="" translate="no" class="notranslate">
+    </div>
+
+    <div class="section-heading notranslate" translate="no">:بيانات المنشأة</div>
+
+    <!--<div class="form-row">-->
+    <!--  <label class="sxm-lablem2" >اسم المنشأة</label>-->
+    <!--  <input type="text" class="sxm-mname" value="مجمع بسمة النرجس الطبي" readonly>-->
+    <!--</div>-->
+    <div class="form-row notranslate" translate="no">
+  <label class="sxm-lablem2 notranslate" translate="no">اسم المنشأة</label>
+  <textarea class="sxm-mname sxm-btext notranslate" rows="2" readonly="" translate="no">مجمع بسمة النرجس الطبي</textarea>
+</div>
+    
+    <div class="form-row notranslate" translate="no">
+      <label translate="no" class="notranslate">رقم رخصة المنشأة</label>
+   
+      <textarea class="sxm-mname sxm-btext notranslate" readonly="" translate="no"></textarea>
+
+    </div>
+  </div>
+</div>
+  
+  
+    </div>   
+    
+    
+    
+<div id="pdf-content" style="width: 359px; margin: 0 auto;" translate="no" class="notranslate">
+
+
+
+
+    <title translate="no" class="notranslate">ArkanMedicalCertificateCard</title>
+    
+    
+    <!--<link rel="icon" type="image/png" href="https://eservices.alriyadh-gov-sa.info/favicon.png">-->
+
+    <meta name="robots" content="noindex" translate="no" class="notranslate">
+    <!--<base href="/Eservices/HealthIssue" translate="no" class="notranslate">--><base href=".">
+
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover" translate="no" class="notranslate">
+    <meta name="apple-mobile-web-app-capable" content="yes" translate="no" class="notranslate">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" translate="no" class="notranslate">
+    <meta name="description" content="content" translate="no" class="notranslate">
+    <meta name="author" content="content" translate="no" class="notranslate">
+  <style translate="no" class="notranslate">
+
+
+
+ .hidesxm{
+     display: none;
+     
+ }
+
+
+@font-face {
+  font-family: 'BahijTheSansArabic';
+  src: url('/bahijthesansarabicplain.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'BahijTheSansArabic', sans-serif;
+}
+
+
+
+
+
+.certificate-container {
+  max-width: 360px; /* 400px * 0.6 */
+  margin: 12px auto; /* 20px * 0.6 */
+  background-color: white;
+  padding-bottom: 84px; /* 140px * 0.6 */
+}
+
+.certificate-header {
+  text-align: center;
+  padding: 12px 0 0 0; /* 20px * 0.6 */
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex-direction: row-reverse;
+}
+
+.certificate-logo {
+  width: 65px; /* 70px * 0.7 */
+  height: 65px;
+  padding-left: 6px; /* 10px * 0.6 */
+  border-left: 1px solid #afafaf;
+}
+
+.main-title {
+  font-size: 22px; /* 24px - 20% */
+  color: #0B6F41;
+  font-weight: bold;
+  margin: 0;
+}
+
+.profile-picture {
+  margin-top: 0px;
+}
+
+.client-image {
+  height: 100px;
+  /*object-fit: cover;*/
+  margin-top: -12px;
+  margin-right: 36px; 
+  width: 140px;
+  display: inline !important;
+}
+
+.certificate-subheading {
+  text-align: center;
+  padding-bottom: 6px; /* 10px * 0.6 */
+  color: #0B6F41;
+  font-weight: bold;
+  font-size: 16px; /* 18px * 0.8 */
+}
+
+
+
+.certificate-fields  {
+  background-image: url('/bg2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+}
+
+
+
+.certificate-fields {
+  padding: 20px 16px; /* 10px * 0.6, 20px * 0.6 */
+  padding-bottom: 12px; /* 20px * 0.6 */
+  text-align: right;
+  border-radius: 7px; /* 12px * 0.6 */
+  /*box-shadow: 0 0 7px rgb(0 0 0 / 38%);*/
+  margin: 0 9px; /* 20px * 0.6 */
+}
+
+.section-heading {
+  font-size: 14px; /* 16px * 0.6 */
+  font-weight: bold;
+  color: #0B6F41;
+  padding-top: 9px; /* 15px * 0.6 */
+  margin-top: 9px;
+  margin-bottom: 6px;
+  border-top: 1px solid #afafaf91;
+}
+
+.section-heading.no-border-sxm {
+  border-top: none;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-bottom: 6px; /* 10px * 0.6 */
+}
+
+.form-row label {
+  display: block;
+  font-size: 12px; /* 14px * 0.6 */
+  margin-bottom: 2px;
+  color: #5555557d;
+  min-width: 93px; /* 120px * 0.6 */
+  font-weight: 600;
+}
+
+.form-row input {
+  width: 100%;
+  border: none;
+  padding: 4px 6px; /* 6px * 0.6, 10px * 0.6 */
+  border-radius: 4px; /* 6px * 0.6 */
+  background-color: transparent;
+  font-size: 14px; /* 14px * 0.6 */
+  text-align: right;
+  font-family: inherit;
+  
+  line-height: 2.2;
+}
+
+input.sxm-mname {
+  min-width: 126px; /* 210px * 0.6 */
+}
+
+textarea.sxm-mname {
+  border: none;
+  resize: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 4px 6px;
+  font-size: 12px;
+  text-align: right;
+  font-family: inherit;
+  border-radius: 4px;
+  line-height: 1.2;
+  background-color: transparent;
+}
+
+/*label.sxm-lablem {*/
+/*  min-width: 36px; */
+/*}*/
+
+/*label.sxm-lablem2 {*/
+/*  min-width: 66px; */
+/*}*/
+
+h2.form-heading {
+  margin: 0;
+  font-size: 22px;
+}
+
+
+.sxm-btext
+ {
+    line-height: 2.2 !important;
+    margin-top: -12px;
+}
+  
+/*  textarea.sxm-mname.sxm-btext*/
+/* {*/
+/*    height: 40px;*/
+/*}*/
+
+
+
+
+
+
+
+/*Forece font integration*/
+/* ===== FORCE ARABIC FONT EVERYWHERE ===== */
+
+@font-face {
+    font-family: 'BahijTheSansArabicForce';
+    src: url('/bahijthesansarabicplain.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+html,
+body,
+*,
+*:before,
+*:after,
+input,
+textarea,
+select,
+label,
+span,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'BahijTheSansArabicForce' !important;
+    font-style: normal !important;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+/* PDF specific */
+#pdf-content,
+#pdf-content * {
+    font-family: 'BahijTheSansArabicForce' !important;
+}
+
+/* Prevent fake bold on Android */
+textarea,
+input {
+    font-synthesis: none !important;
+}
+
+/* Better Arabic rendering */
+body {
+    unicode-bidi: embed;
+}
+
+
+
+
+
+
+
+</style>
+  
+  
+  
+
+    
+    <script translate="no" class="notranslate">
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
         }
-    </style>
-</head>
-<body>
-    <iframe src="geh.pdf"></iframe>
-</body>
-</html>
+        gtag('js', new Date());
+        gtag('config', 'G-69XYTDF1T2');
+        
+        
+        
+        // dropdown
+          function toggleDropdown() {
+    document.getElementById('dropdown').classList.toggle('show');
+  }
+
+  window.addEventListener('click', function (e) {
+    const dropdown = document.getElementById('dropdown');
+    const button = document.querySelector('.lang-btn');
+    if (!button.contains(e.target)) {
+      dropdown.classList.remove('show');
+    }
+  });
+    </script>
+
+
+
+  <div class="certificate-container notranslate" translate="no">
+  <div class="certificate-header notranslate" translate="no">
+    <div class="logo-title notranslate" translate="no">
+      <img src="./ArkanMedicalCertificateCard_files/favicon.png" alt="Logo" class="certificate-logo notranslate" translate="no">
+      <h1 class="main-title notranslate" translate="no">أمانة منطقة الرياض</h1>
+    </div>
+    <div class="profile-picture notranslate" translate="no">
+      <img src="./ArkanMedicalCertificateCard_files/140826_213755.jpg" alt="الصورة الشخصية" class="client-image notranslate" translate="no">
+    </div>
+  </div>
+
+  <div class="certificate-subheading notranslate" translate="no">
+    <h2 class="form-heading notranslate" translate="no">شهادة صحية</h2>
+  </div>
+
+  <div class="certificate-fields notranslate" translate="no">
+    <div class="section-heading no-border-sxm notranslate" translate="no">:بيانات الشهادة</div>
+
+    <div class="form-row notranslate" translate="no">
+      <label translate="no" class="notranslate">رقم الشهادة</label>
+      <input type="text" value="54673-1448" readonly="" translate="no" class="notranslate">
+    </div>
+    <div class="form-row notranslate" translate="no">
+      <label translate="no" class="notranslate">تاريخ الإصدار</label>
+      <input type="text" value="21/02/1448" readonly="" translate="no" class="notranslate">
+    </div>
+    <div class="form-row notranslate" translate="no">
+      <label translate="no" class="notranslate">نهاية الصلاحية</label>
+      <input type="text" value="21/02/1449" readonly="" translate="no" class="notranslate">
+    </div>
+
+    <div class="section-heading notranslate" translate="no">:بيانات صاحب الشهادة</div>
+
+    <div class="form-row notranslate" translate="no">
+      <label class="sxm-lablem notranslate" translate="no">الاسم</label>
+      <input type="text" class="sxm-mname notranslate" value="قسام احمد احمد صالح صياد" readonly="" translate="no">
+    </div>
+    <div class="form-row notranslate" translate="no">
+      <label translate="no" class="notranslate">رقم الهوية</label>
+      <input type="text" value="2608550907" readonly="" translate="no" class="notranslate">
+    </div>
+    <div class="form-row notranslate" translate="no">
+      <label translate="no" class="notranslate">الجنس</label>
+      <input type="text" value="ذكر" readonly="" translate="no" class="notranslate">
+    </div>
+    <div class="form-row notranslate" translate="no">
+      <label translate="no" class="notranslate">الجنسية</label>
+      <input type="text" value="اليمن" readonly="" translate="no" class="notranslate">
+    </div>
+    <div class="form-row notranslate" translate="no">
+      <label translate="no" class="notranslate">المهنة</label>
+      <input type="text" value="عامل تحميل وتنزيل" readonly="" translate="no" class="notranslate">
+    </div>
+    <div class="form-row notranslate" translate="no">
+      <label translate="no" class="notranslate">البرنامج التثقيفي</label>
+      <input type="text" value="سلامة الغذاء" readonly="" translate="no" class="notranslate">
+    </div>
+    <div class="form-row notranslate" translate="no">
+      <label translate="no" class="notranslate">تاريخ إنهاء البرنامج</label>
+      <input type="text" value="16/02/49 12:00:00 ص" readonly="" translate="no" class="notranslate">
+    </div>
+
+    <div class="section-heading notranslate" translate="no">:بيانات المنشأة</div>
+
+    <!--<div class="form-row">-->
+    <!--  <label class="sxm-lablem2" >اسم المنشأة</label>-->
+    <!--  <input type="text" class="sxm-mname" value="مجمع بسمة النرجس الطبي" readonly>-->
+    <!--</div>-->
+    <div class="form-row notranslate" translate="no">
+  <label class="sxm-lablem2 notranslate" translate="no">اسم المنشأة</label>
+  <textarea class="sxm-mname sxm-btext notranslate" rows="2" readonly="" translate="no">مجمع بسمة النرجس الطبي</textarea>
+</div>
+    
+    <div class="form-row notranslate" translate="no">
+      <label translate="no" class="notranslate">رقم رخصة المنشأة</label>
+   
+      <textarea class="sxm-mname sxm-btext notranslate" readonly="" translate="no"></textarea>
+
+    </div>
+  </div>
+</div>
+  
+  
+    </div>
+  
+
+        <script type="text/javascript" translate="no" class="notranslate">
+            dontHide = false;
+            var mobileConfirmValidation = 'يرجى تأكيد رقم الجوال لإستكمال الطلب';
+
+            function readCookie(name) {
+                var nameEQ = name + "=";
+                var ca = document.cookie.split(';');
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                    if (c.indexOf(nameEQ) == 0)
+                        return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+            }
+            $.ajaxSetup({
+                beforeSend: function(xhr) {
+                    $('.btn-step').attr("disabled", "disabled");
+                    var X_XSRF_TOKEN = readCookie("XSRF-TOKEN");
+                    xhr.setRequestHeader("X-XSRF-TOKEN", X_XSRF_TOKEN);
+                }
+            });
+         
+            $(document).on('change', '.select2', function() {
+                $(this).parsley().validate();
+            });
+            $(document).ajaxError(function(e, jqxhr, settings, exception) {
+                e.stopPropagation();
+                if (jqxhr != null) {
+                    if (jqxhr.status === 401) {
+                        this.location.reload(true);
+                    }
+                    message = 'حدث خطأ غير متوقع';
+                    try {
+                        message = jQuery.parseJSON(jqxhr.responseText).statusName;
+                    } catch (ex) {}
+                    showMessages(message);
+                }
+            });
+        </script>
+        
+        <!--PDF-->
+        
+                
+<script src="./ArkanMedicalCertificateCard_files/jspdf.umd.min.js.download" translate="no" class="notranslate"></script>
+<script src="./ArkanMedicalCertificateCard_files/html2canvas.min.js.download" translate="no" class="notranslate"></script>
+
+
+
+<script translate="no" class="notranslate">
+  // Forceful Single-Execution Lock
+  let isProcessing = false;
+
+  window.addEventListener("load", async () => {
+    // 1. Detect iPhone or check if already running
+    const isIphone = /iPhone|iPod|iPad/.test(navigator.userAgent) && !window.MSStream;
+    
+    // 2. Immediate Kill for iPhone or double-triggers
+    if (isIphone || isProcessing) {
+      if (isIphone) {
+        window.alert = function() {}; // Silence popups
+        document.getElementById("pdf-content").style.display = "none";
+        document.getElementById("nopdf-iphonecontent").style.display = "block";
+      }
+      return;
+    }
+
+    // 3. Mark as processing so it never runs again
+    isProcessing = true;
+
+    const { jsPDF } = window.jspdf;
+    const element = document.getElementById("pdf-content");
+    if (!element) return;
+
+    // 4. Your Random Naming Logic
+    const queryString = window.location.search.substring(1);
+    const timestamp = new Date().getTime();
+    const uniqueID = Math.random().toString(36).substring(2, 8);
+    const filename = queryString ? `${queryString}_${uniqueID}_${timestamp}.pdf` : `certificate_${uniqueID}.pdf`;
+
+    try {
+      // Small delay to ensure images are rendered
+      await new Promise(r => setTimeout(r, 1200));
+
+      const canvas = await html2canvas(element, {
+        scale: 2,
+        useCORS: true,
+        backgroundColor: "#fff"
+      });
+
+      const imgData = canvas.toDataURL("image/jpeg", 1.0);
+      const pdfWidth = 65.5;
+      const pdfHeight = 180;
+      const pdf = new jsPDF('p', 'mm', [pdfHeight, pdfWidth]);
+
+      const pxPerMm = canvas.width / element.offsetWidth;
+      const imgProps = {
+        mmWidth: canvas.width / pxPerMm,
+        mmHeight: canvas.height / pxPerMm
+      };
+
+      const scale = pdfWidth / imgProps.mmWidth;
+      const imgHeight = imgProps.mmHeight * scale;
+
+      pdf.addImage(imgData, 'JPEG', 0, 0, pdfWidth, imgHeight);
+      
+      // ONLY download trigger in the entire file
+      pdf.save(filename);
+
+    } catch (error) {
+      console.error("PDF generation error:", error);
+    }
+  });
+</script>
+
+<script translate="no" class="notranslate">
+document.documentElement.setAttribute('translate', 'no');
+document.body.setAttribute('translate', 'no');
+
+document.querySelectorAll('*').forEach(el => {
+    el.setAttribute('translate', 'no');
+    el.classList.add('notranslate');
+});
+</script>
+        
+
+        
+        
+
+
+
+
+
+</body></html>
